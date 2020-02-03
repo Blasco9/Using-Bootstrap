@@ -19,7 +19,6 @@
       }
 
       .header-container {
-        max-width: 92.5%;
         padding: 0;
         font-family: "Roboto Condensed";
       }
@@ -75,8 +74,18 @@
         height: 20px;
       }
 
+      article img {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        .header-container, .main-container {
+          max-width: 92.5%;
+        }
+      }
+
 		</style>
-		<header class="container header-container bg-white">
+		<header class="container-xl header-container bg-white">
 				<div class="d-flex justify-content-between align-items-end bg-danger p-3 pl-4">
 					<p class="mb-0 text-white d-none d-lg-block">Date</p>
 					<svg
@@ -152,12 +161,177 @@
             </form>
 					</div>
         </nav>
-        
-        <main></main>
-
-        <footer></footer>
-
 		</header>
+
+    <main class="container-xl main-container bg-white">
+      <div class="row">
+        <div class="row col-lg-9">
+          <section class="middle-section order-md-2 col-md-7 ml-3">
+            <h6>TOP STORY</h6>
+            <article>
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564381/donald-trump.jpg?w=591&h=364&f=08f473e7c1c2a82fd6e1de67eaa1164c" alt="Donald Trump"></a>
+              <h4><a href="#">Half of U.S. Voters Support Removing Trump From Office, New Poll Finds</a></h4>
+              <p>Voters are also dissatisfied with the way Republicans in Congress have conducted themselves during the impeachment process.</p>
+            </article>
+            <section class="bg-secondary">
+              <h6>CULTURE & TRAVEL</h6>
+              <div class="row">
+                <article class="col-md-6">
+                  <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
+                  <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
+                  <p>Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
+                </article>
+                <article class="col-md-6">
+                  <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
+                  <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
+                  <p>Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
+                </article>
+                <article class="col-md-6">
+                  <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
+                  <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
+                  <p>Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
+                </article>
+                <article class="col-md-6">
+                  <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
+                  <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
+                  <p>Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
+                </article>
+              </div>
+            </section>
+            <section>
+              <h6>MORE STORIES</h6>
+              <article class="row">
+                <a class="col-3"href="#"><img src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
+                <div class="col-9">
+                  <a href="#">London Man Shot Dead By Armed Officers After 'Terrorist-Related' Incident</a>
+                  <p>The man was shot by armed officers on a street in Streatham, in London, on Sunday afternoon, the Metropolitan Police said.</p>
+                </div>
+              </article>
+              <article class="row">
+                <a class="col-3"href="#"><img src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
+                <div class="col-9">
+                  <a href="#">London Man Shot Dead By Armed Officers After 'Terrorist-Related' Incident</a>
+                  <p>The man was shot by armed officers on a street in Streatham, in London, on Sunday afternoon, the Metropolitan Police said.</p>
+                </div>
+              </article>
+            </section>
+          </section>
+          <section class="left-section order-md-1 col-md-5 col-lg-4 p-0 ml-4">
+            <h6>FEATURED STORIES</h6>
+            <article>
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
+              <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
+            </article>
+            <article>
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
+              <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
+            </article>
+            <article>
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
+              <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
+            </article>
+            <article>
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
+              <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
+            </article>
+          </section>
+        </div>
+        <div class="row col-lg-3 p-0">
+          <section class="right-section">
+            <section>
+              <h6>OPINION</h6>
+              <article class="row">
+                <a class="col-3" href="#"><img src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
+                <div class="col-9">
+                  <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
+                  <p>By Sam Hill</p>
+                </div>
+              </article>
+              <article class="row">
+                <a class="col-3" href="#"><img src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
+                <div class="col-9">
+                  <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
+                  <p>By Sam Hill</p>
+                </div>
+              </article>
+              <article class="row">
+                <a class="col-3" href="#"><img src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
+                <div class="col-9">
+                  <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
+                  <p>By Sam Hill</p>
+                </div>
+              </article>
+              <article class="row">
+                <a class="col-3" href="#"><img src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
+                <div class="col-9">
+                  <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
+                  <p>By Sam Hill</p>
+                </div>
+              </article>
+              <article class="row">
+                <a class="col-3" href="#"><img src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
+                <div class="col-9">
+                  <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
+                  <p>By Sam Hill</p>
+                </div>
+              </article>
+              <article class="row">
+                <a class="col-3" href="#"><img src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
+                <div class="col-9">
+                  <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
+                  <p>By Sam Hill</p>
+                </div>
+              </article>
+            </section>
+            <section>
+              <h6>LATEST NEWS</h6>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+              <article class="row">
+                <a class="col-5" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
+                <a class="col-7" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
+              </article>
+            </section>
+            <div class="container">
+              <div>
+                <span>icon</span>
+                <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+              </div>
+              <a href="#">SIGN UP</a>
+              <a href="#">Update your preferences »</a>
+            </div>   
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
