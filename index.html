@@ -26,12 +26,13 @@
 			.logo-img {
 				fill: #fff;
 				width: 400px;
-				margin-left: 12%;
+				
 			}
 
       .subscribe-container {
         font-weight: bold;
         font-size: 18px;
+        line-height: 14px;
       }
 
 			.subscribe-icon {
@@ -80,16 +81,23 @@
 
       @media screen and (min-width: 1200px) {
         .header-container, .main-container {
-          max-width: 92.5%;
+          max-width: 1310px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        .logo-img {
+          width: 132px;
+          height: 20px;
         }
       }
 
 		</style>
 		<header class="container-xl header-container bg-white">
-				<div class="d-flex justify-content-between align-items-end bg-danger p-3 pl-4">
-					<p class="mb-0 text-white d-none d-lg-block">Date</p>
+				<div class="d-flex justify-content-between align-items-end bg-danger p-3">
+					<p class="text-white d-none d-lg-block mb-0 ml-3">Mon, Feb 03, 2020</p>
 					<svg
-						class="logo-img"
+						class="logo-img ml-lg-5"
 						version="1.1"
 						id="Layer_1"
 						xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +116,8 @@
 						</g>
 					</svg>
 					<div class="subscribe-container d-flex align-items-center">
-						<span class="text-white mr-2">SIGN IN</span>
-						<span class="d-flex align-items-center bg-white text-danger px-2"
+						<span class="text-white mr-2 py-1">SIGN IN</span>
+						<span class="d-flex align-items-center bg-white text-danger py-1 px-2"
 							>SUBSCRIBE
 							<svg
 								class="subscribe-icon ml-3"
@@ -140,7 +148,7 @@
 						</span>
 					</div>
 				</div>
-				<nav class="d-flex">
+				<nav class="d-none d-lg-flex">
 					<ul class="nav-ul nav font-weight-bold">
 						<li class="nav-item"><a class="nav-link text-body" href="#">U.S.</a></li>
 						<li class="nav-item"><a class="nav-link text-body" href="#">World</a></li>
@@ -165,8 +173,8 @@
 
     <main class="container-xl main-container bg-white">
       <div class="row">
-        <div class="row col-lg-9">
-          <section class="middle-section order-md-2 col-md-7 ml-3">
+        <div class="row col-lg-9 m-auto">
+          <section class="middle-section order-md-2 col-md-7 pl-3 pr-0">
             <h6>TOP STORY</h6>
             <article>
               <a href="#"><img src="https://d.newsweek.com/en/full/1564381/donald-trump.jpg?w=591&h=364&f=08f473e7c1c2a82fd6e1de67eaa1164c" alt="Donald Trump"></a>
@@ -216,7 +224,7 @@
               </article>
             </section>
           </section>
-          <section class="left-section order-md-1 col-md-5 col-lg-4 p-0 ml-4">
+          <section class="left-section order-md-1 col-md-5 col-lg-4 p-0">
             <h6>FEATURED STORIES</h6>
             <article>
               <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
