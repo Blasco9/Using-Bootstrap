@@ -15,8 +15,20 @@
 	</head>
 	<body class="bg-light-gray">
 		<style>
+      a {
+        color: black;
+      }
+
+      .bg-red {
+        background-color: #f72210;
+      }
+
       .bg-light-gray {
         background-color: #f4f5f6;
+      }
+
+      .color-red {
+        color: #f72210;
       }
 
       .header-container {
@@ -76,8 +88,28 @@
         height: 20px;
       }
 
+      .bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 6px 14px;
+        font-weight: bold;
+        color: #f72210;
+        background-color: rgba(255, 255, 255, .9);
+      }
+
       article img {
         width: 100%;
+      }
+
+      .more-stories-img {
+        width: 135px;
+        height: 90px;
+        float: left;
+      }
+
+      .clearfix {
+        clear: both;
       }
 
       .opinion-img {
@@ -117,6 +149,17 @@
 				height: 14px;
 			}
 
+      .category span {
+        font-weight: bold;
+        color: #f72210;
+        padding: 4px;
+      }
+
+      .category span:first-child {
+        background-color: #f72210;
+        color: white;
+      }
+
       .aside-img {
           width: 135px;
           height: 90px;
@@ -124,6 +167,12 @@
 
       .newsletter-bottom-div {
         background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
+        min-height: 160px;
+      }
+
+      .subscribe-newsletter-bottom .sign-up-btn {
+        background-color: #f72210;
+        max-width: 150px;
       }
 
       .relative-div {
@@ -170,10 +219,14 @@
           width: 132px;
           height: 20px;
         }
+        
+        .subscribe-container {
+          font-size: 14px;
+        }
       }
 
-      @media screen and (max-width: 767px) {
-        .aside-img {
+      @media screen and (min-width: 480px) and (max-width: 767px) {
+        .more-stories-img, .aside-img {
           width: 258px;
           height: 172px;
         }
@@ -181,7 +234,7 @@
 
 		</style>
 		<header class="container-xl header-container bg-white">
-				<div class="d-flex justify-content-between align-items-end bg-danger p-3">
+				<div class="bg-red d-flex justify-content-between align-items-end p-2 p-sm-3">
 					<p class="text-white d-none d-lg-block mb-0 ml-3">Mon, Feb 03, 2020</p>
 					<svg
 						class="logo-img ml-lg-5"
@@ -204,7 +257,7 @@
 					</svg>
 					<div class="subscribe-container d-flex align-items-center">
 						<span class="text-white mr-2 py-1">SIGN IN</span>
-						<span class="d-flex align-items-center bg-white text-danger py-1 px-2"
+						<span class="color-red d-flex align-items-center bg-white py-1 px-2"
 							>SUBSCRIBE
 							<svg
 								class="arrow-icon ml-3"
@@ -264,7 +317,10 @@
           <section class="middle-section order-md-2 col-md-7 col-lg-5 px-2">
             <h6 class="text-black-50">TOP STORY</h6>
             <article>
-              <a href="#"><img src="https://d.newsweek.com/en/full/1564381/donald-trump.jpg?w=591&h=364&f=08f473e7c1c2a82fd6e1de67eaa1164c" alt="Donald Trump"></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1564381/donald-trump.jpg?w=591&h=364&f=08f473e7c1c2a82fd6e1de67eaa1164c" alt="Donald Trump"></a>
+                <div class="bottom-left">U.S</div>
+              </div>
               <h4><a href="#">Half of U.S. Voters Support Removing Trump From Office, New Poll Finds</a></h4>
               <p>Voters are also dissatisfied with the way Republicans in Congress have conducted themselves during the impeachment process.</p>
             </article>
@@ -303,16 +359,17 @@
             </section>
             <section class="mt-3 pt-1">
               <h6 class="text-black-50 border-bottom pb-2 mb-3">MORE STORIES</h6>
-              <article class="w-100 row border-bottom m-0">
-                <a class="col-3 px-0" href="#"><img src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
-                <div class="col-9">
+              <article class="w-100 mt-3 m-0">
+                <a href="#"><img class="more-stories-img mr-3" src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
+                <div>
                   <a href="#">London Man Shot Dead By Armed Officers After 'Terrorist-Related' Incident</a>
                   <p class="mb-2">The man was shot by armed officers on a street in Streatham, in London, on Sunday afternoon, the Metropolitan Police said.</p>
                 </div>
+                <div class="clearfix"></div>
               </article>
-              <article class="w-100 row mt-3 m-0">
-                <a class="col-3 px-0" href="#"><img src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
-                <div class="col-9">
+              <article class="w-100 mt-3 m-0">
+                <a href="#"><img class="more-stories-img mr-3" src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
+                <div>
                   <a href="#">London Man Shot Dead By Armed Officers After 'Terrorist-Related' Incident</a>
                   <p class="mb-2">The man was shot by armed officers on a street in Streatham, in London, on Sunday afternoon, the Metropolitan Police said.</p>
                 </div>
@@ -323,22 +380,34 @@
           <section class="left-section order-md-1 col-md-5 col-lg pl-1 pr-4">
             <h6 class="text-black-50">FEATURED STORIES</h6>
             <article>
-              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+                <div class="bottom-left">SPORTS</div>
+              </div>
               <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
               <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
             </article>
             <article>
-              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+                <div class="bottom-left">SPORTS</div>
+              </div>
               <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
               <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
             </article>
             <article>
-              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+                <div class="bottom-left">SPORTS</div>
+              </div>
               <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
               <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
             </article>
             <article>
-              <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1564097/kyle-shanahan-san-francisco-49ers.jpg?w=397&h=265&q=90&f=51ed8dc620fa05e0ed0d7fc9996e8375" alt="Kyle Shanahan, San Francisco 49ers"></a>
+                <div class="bottom-left">SPORTS</div>
+              </div>
               <h4><a href="#">Super Bowl 2020: Five Things to Look Out for in 49ers vs. Chiefs on Sunday</a></h4>
               <p>Expect the San Francisco 49ers to run the ball, Patrick Mahomes to target Travis Kelce and can Andy Reid win his first ever Super Bowl?</p>
             </article>
@@ -350,42 +419,42 @@
               <h6 class="text-black-50">OPINION</h6>
               <article class="w-100 row border-bottom m-0 pb-1">
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
-                <div class="col-9 p-0">
+                <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
                   <p class="mb-2">By Sam Hill</p>
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
-                <div class="col-9 p-0">
+                <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
                   <p class="mb-2">By Sam Hill</p>
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
-                <div class="col-9 p-0">
+                <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
                   <p class="mb-2">By Sam Hill</p>
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
-                <div class="col-9 p-0">
+                <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
                   <p class="mb-2">By Sam Hill</p>
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
-                <div class="col-9 p-0">
+                <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
                   <p class="mb-2">By Sam Hill</p>
                 </div>
               </article>
               <article class="w-100 row mt-2 m-0 py-1">
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
-                <div class="col-9 p-0">
+                <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
                   <p class="mb-2">By Sam Hill</p>
                 </div>
@@ -457,18 +526,33 @@
             </a>
           </div>  
           <div class="col-sm-9 p-0">
-            <h5 class="text-center">IN THE MAGAZINE</h5>
-            <div class="row border-top pt-3 mx-3">
-              <article class="col-sm pl-0">
+            <div class="d-flex justify-content-center">
+              <span class="n-icon"></span>
+              <h5 class="text-center ml-2">IN THE MAGAZINE</h5>
+            </div>
+            <div class="row border-top w-100 pt-3 mx-auto">
+              <article class="col-sm">
                 <a href="#"><img src="https://d.newsweek.com/en/full/1558608/trump-iran-deescalation.jpg?w=466&h=311&q=90&f=abf152c3b744f9eaf5410782549b55f5" alt=""></a>
+                <div class="category my-2">
+                  <span>COVER</span>
+                  <span>WORLD</span>
+                </div>
                 <h6><a href="#">With a New Weapon in Trump's Hands, The Iran Crisis Risks Going Nuclear</a></h6>
               </article>
               <article class="col-sm">
                 <a href="#"><img src="https://d.newsweek.com/en/full/1558608/trump-iran-deescalation.jpg?w=466&h=311&q=90&f=abf152c3b744f9eaf5410782549b55f5" alt=""></a>
+                <div class="category my-2">
+                  <span>COVER</span>
+                  <span>WORLD</span>
+                </div>
                 <h6><a href="#">With a New Weapon in Trump's Hands, The Iran Crisis Risks Going Nuclear</a></h6>
               </article>
-              <article class="col-sm pr-0">
+              <article class="col-sm">
                 <a href="#"><img src="https://d.newsweek.com/en/full/1558608/trump-iran-deescalation.jpg?w=466&h=311&q=90&f=abf152c3b744f9eaf5410782549b55f5" alt=""></a>
+                <div class="category my-2">
+                  <span>COVER</span>
+                  <span>WORLD</span>
+                </div>
                 <h6><a href="#">With a New Weapon in Trump's Hands, The Iran Crisis Risks Going Nuclear</a></h6>
               </article>
             </div>
@@ -476,25 +560,44 @@
           <div class="row p-3">
             <article class="col-sm-3">
               <a href="#"><img src="https://d.newsweek.com/en/full/1558608/trump-iran-deescalation.jpg?w=466&h=311&q=90&f=abf152c3b744f9eaf5410782549b55f5" alt=""></a>
+              <div class="category my-2">
+                <span>COVER</span>
+                <span>WORLD</span>
+              </div>
               <h6><a href="#">With a New Weapon in Trump's Hands, The Iran Crisis Risks Going Nuclear</a></h6>
             </article>
             <article class="col-sm-3">
               <a href="#"><img src="https://d.newsweek.com/en/full/1558608/trump-iran-deescalation.jpg?w=466&h=311&q=90&f=abf152c3b744f9eaf5410782549b55f5" alt=""></a>
+              <div class="category my-2">
+                <span>COVER</span>
+                <span>WORLD</span>
+              </div>
               <h6><a href="#">With a New Weapon in Trump's Hands, The Iran Crisis Risks Going Nuclear</a></h6>
             </article>
             <article class="col-sm-3">
               <a href="#"><img src="https://d.newsweek.com/en/full/1558608/trump-iran-deescalation.jpg?w=466&h=311&q=90&f=abf152c3b744f9eaf5410782549b55f5" alt=""></a>
+              <div class="category my-2">
+                <span>COVER</span>
+                <span>WORLD</span>
+              </div>
               <h6><a href="#">With a New Weapon in Trump's Hands, The Iran Crisis Risks Going Nuclear</a></h6>
             </article>
             <article class="col-sm-3">
               <a href="#"><img src="https://d.newsweek.com/en/full/1563303/mourning-legend.jpg?w=480&h=320&l=48&t=45&q=90&f=beee666340515d989ca7bd409f592b45" alt=""></a>
+              <div class="category my-2">
+                <span>COVER</span>
+                <span>WORLD</span>
+              </div>
               <h6><a href="#">Mourning a Legend</a></h6>
             </article>
           </div>
         </div>
       </section>
       <section class="px-3 mt-3">
-        <h5 class="text-center border-bottom mb-3 pb-3">NEWSWEEK CONVERSATIONS</h5>
+        <div class="d-flex justify-content-center border-bottom mb-3 pb-3">
+          <span class="n-icon"></span>
+          <h5 class="text-center ml-2">NEWSWEEK CONVERSATIONS</h5>
+        </div>
         <div class="row bg-dark mx-auto">
           <div class="row col-lg-8 p-0 mx-auto">
             <div class="col-sm-6 col-md-7 order-sm-2 overflow-hidden p-0">
@@ -510,108 +613,156 @@
           </div>
           <div class="col-lg border-left p-0">
             <div class="d-flex border-bottom border-top">
-              <a class="col-sm-3 col-lg-5 p-0 overflow-hidden" href="#"><img class="h-100 mw-100" src="https://d.newsweek.com/en/full/1555350/newsweek-conversations-leslie-grossman.jpg?w=173&h=104&f=b810dcbe860058739bb5ae4114710a95" alt=""></a>
+              <a class="p-0 overflow-hidden" href="#"><img class="h-100 mw-100" src="https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg?w=173&h=104&f=64f6b307bd86eb7c5a0a44276471bf7f" alt=""></a>
               <div class="px-3 py-2">
-                <h6><a class="text-white" href="#">'American Horror Story's' Leslie Grossman Is the Definition of a Great Hollywood Character Actress</a></h6>
-                <span class="text-muted">21:04</span>
+                <h6><a class="text-white" href="#">Newsweek Conversations with Actor Willem Dafoe</a></h6>
+                <span class="text-muted">20:49</span>
               </div>
             </div>
             <div class="d-flex border-bottom">
-              <a class="col-sm-3 col-lg-5 p-0 overflow-hidden" href="#"><img class="h-100 mw-100" src="https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg?w=173&h=104&f=64f6b307bd86eb7c5a0a44276471bf7f" alt=""></a>
+              <a class="p-0 overflow-hidden" href="#"><img class="h-100 mw-100" src="https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg?w=173&h=104&f=64f6b307bd86eb7c5a0a44276471bf7f" alt=""></a>
               <div class="px-3 py-2">
                 <h6><a class="text-white" href="#">Newsweek Conversations with Actor Willem Dafoe</a></h6>
                 <span class="text-muted">20:49</span>
               </div>
             </div>
             <div class="d-flex">
-              <a class="col-sm-3 col-lg-5 p-0 overflow-hidden" href="#"><img class="h-100 mw-100" src="https://d.newsweek.com/en/full/1555352/newsweek-conversations-matthew-modine.jpg?w=173&h=104&f=654768a75c92e3ead489a0ab7a1ae31f" alt=""></a>
+              <a class="p-0 overflow-hidden" href="#"><img class="h-100 mw-100" src="https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg?w=173&h=104&f=64f6b307bd86eb7c5a0a44276471bf7f" alt=""></a>
               <div class="px-3 py-2">
-                <h6><a class="text-white" href="#">‘Stranger Things’ Star Matthew Modine On New Movie ‘Miss Virginia’</a></h6>
-                <span class="text-muted">17:39</span>
+                <h6><a class="text-white" href="#">Newsweek Conversations with Actor Willem Dafoe</a></h6>
+                <span class="text-muted">20:49</span>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="p-3 mt-4">
-        <h5 class="text-center border-bottom pb-3 mb-3">EDITOR'S PICK</h5>
+        <div class="d-flex justify-content-center border-bottom mb-3 pb-3">
+          <span class="n-icon"></span>
+          <h5 class="text-center ml-2">EDITOR'S PICK</h5>
+        </div>
         <div class="row">
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564780/meat-market-beijing.jpg?w=397&h=295&f=f23f51a15a8690f6aee50c5e1e8cf9a9" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564780/meat-market-beijing.jpg?w=397&h=295&f=f23f51a15a8690f6aee50c5e1e8cf9a9" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Coronavirus Trade Ban Sees Frozen Eagle, Leopard Cat Meat Seized in China</a></h5>
             <p>Hundreds of frozen animal carcasses have been seized in a raid after Chinese authorities promise to crackdown on unregulated meat trade.</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564770/brian-wilson.jpg?w=397&h=295&f=3b3d152f7fe7d575970a5df58833dca7" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564770/brian-wilson.jpg?w=397&h=295&f=3b3d152f7fe7d575970a5df58833dca7" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Beach Boys' Brian Wilson Opposes Performance at Hunting Convention</a></h5>
             <p>The musician urged fans to sign a petition asking Mike Love to reconsider a planned performance on Wednesday.</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564632/super-bowl.jpg?w=397&h=295&f=02dbff1f741bb18693122388f472a4b8" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564632/super-bowl.jpg?w=397&h=295&f=02dbff1f741bb18693122388f472a4b8" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Immigration Advocates Torn By Shakira, Jennifer Lopez's 'Political Message'</a></h5>
             <p>"We had a lot of really mixed emotions," said RAICES Chief Advocacy Officer Erika Andiola.</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564763/plasma-globe.jpg?w=397&h=295&f=95eb579527d2ada2b34a63d0e6407557" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564763/plasma-globe.jpg?w=397&h=295&f=95eb579527d2ada2b34a63d0e6407557" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Electric Currents Controlled with Quantum Switch Turn Metals to Insulators</a></h5>
             <p>"We have found a new way to switch electrical conduction in materials from on to off," revealed author Berend Zwartsenberg, of UBC's Stewart Blusson Quantum Matter Institute (SBQMI).</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564620/wuhan-china-dog-january-22-2020.jpg?w=397&h=295&f=04cd0c0988dfca03de53b457ddc789f9" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564620/wuhan-china-dog-january-22-2020.jpg?w=397&h=295&f=04cd0c0988dfca03de53b457ddc789f9" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Thousands of Pets in Wuhan Coronavirus Lockdown Face Death From Starvation</a></h5>
             <p>The capital of Hubei province, where the virus was first discovered, has been on lockdown since January 23.</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564580/des-moines.jpg?w=397&h=295&f=8e0c68ff5e1c6e84c51133483582000d" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564580/des-moines.jpg?w=397&h=295&f=8e0c68ff5e1c6e84c51133483582000d" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Caged Children Appear in Des Moines to Remind Caucus-Goers of Trump Policy</a></h5>
             <p>"We're asking people in Iowa and across the country: Don't look away," said RAICES Chief Advocacy Officer Erika Andiola.</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564627/andrew-yang-campaigns-iowa.jpg?w=397&h=295&l=40&t=35&f=bee52afedf70f1c450f51fece3fdf4e6" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564627/andrew-yang-campaigns-iowa.jpg?w=397&h=295&l=40&t=35&f=bee52afedf70f1c450f51fece3fdf4e6" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">Andrew Yang Explains Why He Thinks Trump Hasn't Tweeted About Him</a></h5>
             <p>The entrepreneur and Democratic candidate said he is "better at the internet" than President Donald Trump.</p>
           </article>
           <article class="col-md-6 col-lg-3">
-            <a href="#"><img src="https://d.newsweek.com/en/full/1564553/earth-sea-level-visualization.png?w=397&h=295&f=f6d88edf70ff92a357aab3c21de90e59" alt=""></a>
+            <div class="position-relative">
+              <a href="#"><img src="https://d.newsweek.com/en/full/1564553/earth-sea-level-visualization.png?w=397&h=295&f=f6d88edf70ff92a357aab3c21de90e59" alt=""></a>
+              <div class="bottom-left">WORLD</div>
+            </div>
             <h5 class="mt-2"><a href="#">This Is What Earth Would Look Like If the Oceans Slowly Drained Away</a></h5>
             <p>"The ocean floor is just as variable and interesting in its geology as the continents," planetary scientist James O'Donoghue said.</p>
           </article>
         </div>
       </section>
       <section class="p-3">
-        <h5 class="text-center border-bottom pb-3 mb-3">FEATURED SLIDESHOWS</h5>
+        <div class="d-flex justify-content-center border-bottom pb-3 mb-3">
+          <span class="n-icon"></span>
+          <h5 class="text-center ml-2">FEATURED SLIDESHOWS</h5>
+        </div>
         <div class="border-bottom pb-5 mb-4">
           <div class="row">
             <article class="col-md-4">
-              <a href="#"><img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" alt=""></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" alt=""></a>
+                <div class="bottom-left">11</div>
+              </div>
               <h5 class="mt-3"><a href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h5>
             </article>
             <article class="col-md-4">
-              <a href="#"><img src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6" alt=""></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1552749/eyjafjallajokull-iceland.jpg?w=397&h=265&f=ea1ffc67b32c527ef435529cb5bd2dc6" alt=""></a>
+                <div class="bottom-left">11</div>
+              </div>
               <h5 class="mt-3"><a href="#">Active Volcanoes Around the World That Could Erupt at Any Moment</a></h5>
             </article>
             <article class="col-md-4">
-              <a href="#"><img src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.jpg?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d" alt=""></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1547486/lipschutz-living-room-hotel-chelsea.jpg?w=397&h=265&f=fb4270bf5fbc2591cc43d24d0377621d" alt=""></a>
+                <div class="bottom-left">11</div>
+              </div>
               <h5 class="mt-3"><a href="#">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</a></h5>
             </article>
           </div>
           <div class="row mt-4">
             <article class="col-md-4">
-              <a href="#"><img src="https://d.newsweek.com/en/full/1543106/2018-cup-collection.jpg?w=397&h=265&f=e00260b486695409ac860cb50949464c" alt=""></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1543106/2018-cup-collection.jpg?w=397&h=265&f=e00260b486695409ac860cb50949464c" alt=""></a>
+                <div class="bottom-left">11</div>
+              </div>
               <h5 class="mt-3"><a href="#">A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019</a></h5>
             </article>
             <article class="col-md-4">
-              <a href="#"><img src="https://d.newsweek.com/en/full/1542741/holiday-cups-starbucks.jpg?w=397&h=265&f=cc7b0a58452583ca846051991fe522ce" alt=""></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1542741/holiday-cups-starbucks.jpg?w=397&h=265&f=cc7b0a58452583ca846051991fe522ce" alt=""></a>
+                <div class="bottom-left">11</div>
+              </div>
               <h5 class="mt-3"><a href="#">What Starbucks Christmas Holiday Drinks Are Available This Year?</a></h5>
             </article>
             <article class="col-md-4">
-              <a href="#"><img src="https://d.newsweek.com/en/full/1539646/first-wives-club-pumpkin.jpg?w=397&h=265&f=4a9ecc91f6b122866651645aed974cf6" alt=""></a>
+              <div class="position-relative">
+                <a href="#"><img src="https://d.newsweek.com/en/full/1539646/first-wives-club-pumpkin.jpg?w=397&h=265&f=4a9ecc91f6b122866651645aed974cf6" alt=""></a>
+                <div class="bottom-left">11</div>
+              </div>
               <h5 class="mt-3"><a href="#">Meet the Master Carver Who Turns Pumpkins Into Portraits</a></h5>
             </article>
           </div>
         </div>
         <section class="border-bottom pb-4 mb-4">
-          <h5>U.S.</h5>
+          <h5 class="color-red">U.S.</h5>
           <div class="row">
             <article class="col-md-4">
               <a href="#"><img src="https://d.newsweek.com/en/full/1564782/phoenix-police.png?w=397&h=265&f=0b217608975e4dbb8f847ae3ab126fa9" alt=""></a>
@@ -638,7 +789,7 @@
           </div>
         </section>
         <section class="border-bottom pb-4 mb-4">
-          <h5>World</h5>
+          <h5 class="color-red">World</h5>
           <div class="row">
             <article class="col-md-4">
               <a href="#"><img src="https://d.newsweek.com/en/full/1564557/bts-iheartradio-los-angeles-2020.jpg?w=397&h=265&f=4980513d2853a694e5fc2dd78dfcd34b" alt=""></a>
@@ -665,7 +816,7 @@
           </div>
         </section>
         <section class="border-bottom pb-4 mb-4">
-          <h5>Business</h5>
+          <h5 class="color-red">Business</h5>
           <div class="row">
             <article class="col-md-4">
               <a href="#"><img src="https://d.newsweek.com/en/full/1555439/receiver.png?w=397&h=265&f=54b7ca6b23c0acce3e9930924f011d77" alt=""></a>
@@ -692,7 +843,7 @@
           </div>
         </section>
         <section class="border-bottom pb-4 mb-4">
-          <h5>Tech & Science</h5>
+          <h5 class="color-red">Tech & Science</h5>
           <div class="row">
             <article class="col-md-4">
               <a href="#"><img src="https://d.newsweek.com/en/full/1564624/ocearch-unamaki.jpg?w=397&h=265&f=bfdb1cc87e0e20bef38c85000f8c6454" alt=""></a>
@@ -719,7 +870,7 @@
           </div>
         </section>
         <section class="border-bottom pb-4 mb-4">
-          <h5>Culture</h5>
+          <h5 class="color-red">Culture</h5>
           <div class="row">
             <article class="col-md-4">
               <a href="#"><img src="https://d.newsweek.com/en/full/1564656/new-york-fashion-week-2020-runway-schedule-how-watch-more.jpg?w=397&h=265&f=3c06afd10642bb34e863f2d1ab8f72ee" alt=""></a>
@@ -746,7 +897,7 @@
           </div>
         </section>
         <section class="border-bottom pb-4 mb-4">
-          <h5>Sports</h5>
+          <h5 class="color-red">Sports</h5>
           <div class="row">
             <article class="col-md-4">
               <a href="#"><img src="https://d.newsweek.com/en/full/1564806/patrick-mahomes-kansas-city-chiefs.jpg?w=397&h=265&f=78b8a1c9aaafcef0a54b0fbb84c68acd" alt=""></a>
@@ -773,11 +924,11 @@
           </div>
         </section>
       </section>
-      <section class="px-3">
+      <section class="subscribe-newsletter-bottom px-sm-3">
         <div class="row w-100 m-0">
           <div class="col-lg-7 col-xl-8 p-0">
-            <h6>SUBSCRIBE</h6>
-            <div class="container-fluid pl-0 pr-2">
+            <h6 class="color-red">SUBSCRIBE</h6>
+            <div class="container-fluid px-0 pr-lg-2">
               <div class="row bg-light-gray w-100 p-4 mx-auto">
                 <div class="relative-div">
                   <img src="https://d.newsweek.com/en/full/1560513/january-24-31-2020-cover.jpg?w=170&q=95&f=e37a347d93374c1cd0542ffe614ab3b4" alt="">
@@ -786,21 +937,48 @@
                 <div class="col-md d-flex flex-column justify-content-md-center">
                   <h5>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
                   <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
-                  <span>Subscribe</span>
+                  <a class="sign-up-btn text-white text-decoration-none" href="#">SUBSCRIBE
+                    <svg class="arrow-icon ml-2 mb-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
+                      <defs>
+                      <rect id="SVGID_1_" width="8" height="14"></rect>
+                      </defs>
+                      <clipPath id="SVGID_2_">
+                      <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+                      </clipPath>
+                      <g id="Shape_1" class="st0">
+                      <g>
+                      <polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+                      </g>
+                      </g>
+                      </g></svg>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 col-xl-4 pr-0 pl-4">
-            <h6>NEWSLETTER</h6>
+          <div class="col-lg-5 col-xl-4 p-0 pr-lg-0 pl-lg-4">
+            <h6 class="color-red">NEWSLETTER</h6>
             <div class="row d-md-flex w-100 border m-0">
-              <div class="newsletter-bottom-div col-6">
-              </div>
-              <div class="col-6 p-4">
+              <div class="newsletter-bottom-div col-md"></div>
+              <div class="col-md p-4">
                 <h5>The Starting 5</h5>
                 <p>Take back your inbox.
                   Sign up for our newsletter and start making sense of the world around you.</p>
-                <span>Sign Up</span>
+                  <a class="sign-up-btn text-white text-decoration-none" href="#">SIGN UP
+                    <svg class="arrow-icon ml-2 mb-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
+                      <defs>
+                      <rect id="SVGID_1_" width="8" height="14"></rect>
+                      </defs>
+                      <clipPath id="SVGID_2_">
+                      <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
+                      </clipPath>
+                      <g id="Shape_1" class="st0">
+                      <g>
+                      <polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+                      </g>
+                      </g>
+                      </g></svg>
+                  </a>
               </div>
             </div>
           </div>
@@ -808,7 +986,7 @@
       </section>
       <footer class="px-5 pb-5 mt-5">
         <div class="d-md-flex justify-content-between border-bottom pb-3 mb-3">
-          <div class="d-flex align-items-end">
+          <div class="d-flex flex-wrap align-items-end">
             <svg
               class="logo-img"
               version="1.1"
