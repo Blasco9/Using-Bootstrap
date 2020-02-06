@@ -11,235 +11,16 @@
     />
     <script src="https://kit.fontawesome.com/7692afb188.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 		<title>Newsweek</title>
 	</head>
 	<body class="bg-light-gray">
-		<style>
-      a {
-        color: black;
-      }
-
-      .bg-red {
-        background-color: #f72210;
-      }
-
-      .bg-light-gray {
-        background-color: #f4f5f6;
-      }
-
-      .color-red {
-        color: #f72210;
-      }
-
-      .header-container {
-        padding: 0;
-        font-family: "Roboto Condensed";
-      }
-
-			.logo-img {
-				fill: #fff;
-				width: 400px;
-				
-			}
-
-      .subscribe-container {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 14px;
-      }
-
-			.arrow-icon {
-				fill: #f72210;
-				width: 8px;
-				height: 14px;
-			}
-
-      .nav-ul {
-        font-size: 20px;
-        width: 85%;
-        display: flex;
-        justify-content: space-around;
-      }
-
-      .nav-ul li:last-child a {
-        border: none;
-      }
-
-      .nav-item {
-        display: flex;
-        align-items: center;
-      }
-
-      .nav-link {
-        padding: 0;
-      }
-
-      .nav-search {
-        width: 60px;
-        height: 54px;
-        border: none;
-        outline: none;
-      }
-
-      .search-icon {
-        display: inline-block;
-        background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat white;
-        width: 20px;
-        height: 20px;
-      }
-
-      .bottom-left {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: 6px 14px;
-        font-weight: bold;
-        color: #f72210;
-        background-color: rgba(255, 255, 255, .9);
-      }
-
-      article img {
-        width: 100%;
-      }
-
-      .more-stories-img {
-        width: 135px;
-        height: 90px;
-        float: left;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      .opinion-img {
-        width: 63px;
-        height: 63px;
-      }
-
-      .newsletter-container {
-        font-family: "Roboto Condensed";
-      }
-
-      .n-icon {
-        display: inline-block;
-        width: 29px;
-        height: 28px;
-        background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
-      }
-
-      .sign-up-text {
-        margin-left: 10px;
-        line-height: 19px;
-        font-size: 19px;
-        font-weight: bold;
-      }
-
-      .sign-up-btn {
-        background-color: #666;
-        font-weight: bold;
-        font-size: 18px;
-        padding: 8px 10px;
-        line-height: 18px;
-      }
-
-      .sign-up-btn .arrow-icon {
-        fill: white;
-				width: 8px;
-				height: 14px;
-			}
-
-      .category span {
-        font-weight: bold;
-        color: #f72210;
-        padding: 4px;
-      }
-
-      .category span:first-child {
-        background-color: #f72210;
-        color: white;
-      }
-
-      .aside-img {
-          width: 135px;
-          height: 90px;
-      }
-
-      .newsletter-bottom-div {
-        background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
-        min-height: 160px;
-      }
-
-      .subscribe-newsletter-bottom .sign-up-btn {
-        background-color: #f72210;
-        max-width: 150px;
-      }
-
-      .relative-div {
-        display: inline-block;
-        position: relative;
-        padding-bottom: 13px;
-        padding-right: 90px;
-      }
-
-      .absolute-img {
-        position: absolute;
-        top: 13px;
-        left: 80px;
-      }
-
-      footer .logo-img {
-        cursor: pointer;
-        fill: #f72210;
-        width: 236px;
-        height: 36px;
-      }
-
-      .newsweek-copyright {
-        margin-bottom: 0;
-        margin-left: 14px;
-        font-size: 12px;
-        line-height: 12px;
-      }
-
-      .fab {
-        padding: 0 5px;
-        font-size: 26px;
-        color: #777;
-      }
-
-      @media screen and (min-width: 1200px) {
-        .header-container, .main-container {
-          max-width: 1310px;
-        }
-      }
-
-      @media screen and (max-width: 991px) {
-        .logo-img {
-          width: 132px;
-          height: 20px;
-        }
-        
-        .subscribe-container {
-          font-size: 14px;
-        }
-      }
-
-      @media screen and (min-width: 480px) and (max-width: 767px) {
-        .more-stories-img, .aside-img {
-          width: 258px;
-          height: 172px;
-        }
-      }
-
-		</style>
 		<header class="container-xl header-container bg-white">
 				<div class="bg-red d-flex justify-content-between align-items-end p-2 p-sm-3">
 					<p class="text-white d-none d-lg-block mb-0 ml-3">Mon, Feb 03, 2020</p>
 					<svg
 						class="logo-img ml-lg-5"
 						version="1.1"
-						id="Layer_1"
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"
 						x="0px"
@@ -250,7 +31,6 @@
 					>
 						<g>
 							<path
-								class="st0"
 								d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
 							></path>
 						</g>
@@ -262,7 +42,6 @@
 							<svg
 								class="arrow-icon ml-3"
 								version="1.1"
-								id="Layer_1"
 								xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								x="0px"
@@ -271,16 +50,16 @@
 								style="enable-background:new 0 0 8 14;"
 								xml:space="preserve"
 							>
-								<g id="arrow-right">
+								<g>
 									<defs>
-										<rect id="SVGID_1_" width="8" height="14"></rect>
+										<rect width="8" height="14"></rect>
 									</defs>
-									<clipPath id="SVGID_2_">
+									<clipPath>
 										<use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
 									</clipPath>
-									<g id="Shape_1" class="st0">
+									<g>
 										<g>
-											<polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+											<polygon points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
 										</g>
 									</g>
 								</g>
@@ -328,6 +107,7 @@
               <h6 class="pl-2 text-black-50">CULTURE & TRAVEL</h6>
               <div class="row">
                 <article class="col-md-6">
+                  <h2 class="d-none">a</h2>
                   <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
                   <div class="pt-2 pl-2">
                     <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
@@ -335,24 +115,27 @@
                   </div>
                 </article>
                 <article class="col-md-6">
+                  <h2 class="d-none">a</h2>
                   <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
                   <div class="pt-2 pl-2">
                     <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
-                    <p class="pt-2">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p class="pt-2">
+                    <p class="pt-2">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
                   </div>
                 </article>
                 <article class="col-md-6">
+                  <h2 class="d-none">a</h2>
                   <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
                   <div class="pt-2 pl-2">
                     <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
-                    <p class="pt-2">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p class="pt-2">
+                    <p class="pt-2">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
                   </div>
                 </article>
                 <article class="col-md-6">
+                  <h2 class="d-none">a</h2>
                   <a href="#"><img src="https://d.newsweek.com/en/full/1563246/cul-extremevacations-banner.jpg?w=397&h=265&l=53&t=46&f=425beec66e56d27490eaf4fb8b62313d" alt=""></a>
                   <div class="pt-2 pl-2">
                     <a href="#">High-Stakes Holidays That Cater to Thrill Seekers</a>
-                    <p class="pt-2">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p class="pt-2">
+                    <p class="pt-2">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
                   </div>
                 </article>
               </div>
@@ -360,6 +143,7 @@
             <section class="mt-3 pt-1">
               <h6 class="text-black-50 border-bottom pb-2 mb-3">MORE STORIES</h6>
               <article class="w-100 mt-3 m-0">
+                <h2 class="d-none">a</h2>
                 <a href="#"><img class="more-stories-img mr-3" src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
                 <div>
                   <a href="#">London Man Shot Dead By Armed Officers After 'Terrorist-Related' Incident</a>
@@ -368,6 +152,7 @@
                 <div class="clearfix"></div>
               </article>
               <article class="w-100 mt-3 m-0">
+                <h2 class="d-none">a</h2>
                 <a href="#"><img class="more-stories-img mr-3" src="https://d.newsweek.com/en/full/1561291/breaking-news-newsweek-high-resolution.jpg?w=135&h=90&f=ba74cdfeb83619af12a385a6d3aa4ab8" alt=""></a>
                 <div>
                   <a href="#">London Man Shot Dead By Armed Officers After 'Terrorist-Related' Incident</a>
@@ -415,9 +200,11 @@
         
         
           <section class="right-section order-md-3 col-lg pr-1 pl-4">
+            <h2 class="d-none">a</h2>
             <section>
               <h6 class="text-black-50">OPINION</h6>
               <article class="w-100 row border-bottom m-0 pb-1">
+                <h2 class="d-none">a</h2>
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
                 <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
@@ -425,6 +212,7 @@
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
+                <h2 class="d-none">a</h2>
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
                 <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
@@ -432,6 +220,7 @@
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
+                <h2 class="d-none">a</h2>
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
                 <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
@@ -439,6 +228,7 @@
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
+                <h2 class="d-none">a</h2>
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
                 <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
@@ -446,6 +236,7 @@
                 </div>
               </article>
               <article class="w-100 row border-bottom mt-2 m-0 py-1">
+                <h2 class="d-none">a</h2>
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
                 <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
@@ -453,6 +244,7 @@
                 </div>
               </article>
               <article class="w-100 row mt-2 m-0 py-1">
+                <h2 class="d-none">a</h2>
                 <a class="pr-3" href="#"><img class="opinion-img" src="https://d.newsweek.com/en/full/1500975/sam-hill.png?w=63&h=63&f=608e92ee38c2b44188e64f7006592687" alt="Sam Hill"></a>
                 <div class="col p-0">
                   <a href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a>
@@ -463,30 +255,37 @@
             <section class="mt-4 pt-1">
               <h6 class="text-black-50">LATEST NEWS</h6>
               <article class="row border-bottom m-0 pb-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
               <article class="row border-bottom m-0 py-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
               <article class="row border-bottom m-0 py-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
               <article class="row border-bottom m-0 py-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
               <article class="row border-bottom m-0 py-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
               <article class="row border-bottom m-0 py-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
               <article class="row m-0 py-2">
+                <h2 class="d-none">a</h2>
                 <a class="col-5 pl-0 pr-2" href="#"><img src="https://d.newsweek.com/en/full/1564416/rhesus-macaque-monkey-hong-kong.jpg?w=397&h=265&f=4e7c4cbb11093cea38fd16ac47896ef3" alt=""></a>
                 <a class="col-7 pl-1 pr-0" href="#">Where Did Florida's Herpes Monkeys Come From?</a>
               </article>
@@ -499,16 +298,16 @@
                   <span class="sign-up-text">SIGN UP FOR OUR NEWSLETTER</span>
                 </div>
                 <a class="sign-up-btn text-white text-decoration-none" href="#">SIGN UP
-                  <svg class="arrow-icon ml-2 mb-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
+                  <svg class="arrow-icon ml-2 mb-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g>
                     <defs>
-                    <rect id="SVGID_1_" width="8" height="14"></rect>
+                    <rect width="8" height="14"></rect>
                     </defs>
-                    <clipPath id="SVGID_2_">
+                    <clipPath>
                     <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
                     </clipPath>
-                    <g id="Shape_1" class="st0">
                     <g>
-                    <polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+                    <g>
+                    <polygon points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
                     </g>
                     </g>
                     </g></svg>
@@ -773,6 +572,7 @@
               <h5><a href="#">Ernie Boch Jr. Tips Waitress $5,000 in 2020 Tip Challenge: 'I Was Shaking'</a></h5>
             </article>
             <article class="col-md-4">
+              <h2 class="d-none">a</h2>
               <article class="d-flex border-bottom pb-2 mb-2">
                 <a href="#"><img class="aside-img" src="https://d.newsweek.com/en/full/1564766/tom-perez.jpg?w=135&h=90&f=83ead622370082ba438ac605d45027a8" alt=""></a>
                 <h6 class="ml-3 text-break"><a href="#">#TomPerezResign Trends as DNC Chair Accused of Changing Rules for Bloomberg</a></h6>
@@ -800,6 +600,7 @@
               <h5><a href="#">Children Allegedly Teargassed In Greek Crackdown On Migrants' Protest</a></h5>
             </article>
             <article class="col-md-4">
+              <h2 class="d-none">a</h2>
               <article class="d-flex border-bottom pb-2 mb-2">
                 <a href="#"><img class="aside-img" src="https://d.newsweek.com/en/full/1564535/london-attack.jpg?w=135&h=90&f=fd7e9b6b6f1077dfa780438980579922" alt=""></a>
                 <h6 class="ml-3 text-break"><a href="#">ISIS Claims Responsibility For London Terror Attack</a></h6>
@@ -827,6 +628,7 @@
               <h5><a href="#">Female Entrepreneur Active in Tokyo and Uganda</a></h5>
             </article>
             <article class="col-md-4">
+              <h2 class="d-none">a</h2>
               <article class="d-flex border-bottom pb-2 mb-2">
                 <a href="#"><img class="aside-img" src="https://d.newsweek.com/en/full/1563039/nike-kobe-bryant.jpg?w=135&h=90&f=312528c7106e32bf3bb06ef7c0506388" alt=""></a>
                 <h6 class="ml-3 text-break"><a href="#">Nike Denies Pulling Kobe Bryant-branded Products From Its Website</a></h6>
@@ -854,6 +656,7 @@
               <h5><a href="#">Ancient Well is the Oldest Wooden Structure Ever Discovered</a></h5>
             </article>
             <article class="col-md-4">
+              <h2 class="d-none">a</h2>
               <article class="d-flex border-bottom pb-2 mb-2">
                 <a href="#"><img class="aside-img" src="https://d.newsweek.com/en/full/1564562/ice-ring-lake-bakail.jpg?w=135&h=90&f=29b519f03ea52069f2378f123d282315" alt=""></a>
                 <h6 class="ml-3 text-break"><a href="#">Bizarre Giant Ice Rings on Siberia's Lake Baikal Linked to Warm Currents</a></h6>
@@ -881,6 +684,7 @@
               <h5><a href="#">Tom Papa on His New Netflix Special 'You're Doing Great'</a></h5>
             </article>
             <article class="col-md-4">
+              <h2 class="d-none">a</h2>
               <article class="d-flex border-bottom pb-2 mb-2">
                 <a href="#"><img class="aside-img" src="https://d.newsweek.com/en/full/1564758/dunkaroos.png?w=135&h=90&f=cfdc39884ce62de05a52003c02b6081a" alt=""></a>
                 <h6 class="ml-3 text-break"><a href="#">When Were Dunkaroos Discontinued? Iconic 90s Snack Set to Return in Summer</a></h6>
@@ -908,6 +712,7 @@
               <h5><a href="#">Patrick Mahomes Pulled Off a Super Bowl Feat Sunday That Has Never Happened</a></h5>
             </article>
             <article class="col-md-4">
+              <h2 class="d-none">a</h2>
               <article class="d-flex border-bottom pb-2 mb-2">
                 <a href="#"><img class="aside-img" src="https://d.newsweek.com/en/full/1564694/randy-orton-attacks-edge-wwe-monday-raw.jpg?w=135&h=90&f=1e3d7675106578a5b154975177c2c6e2" alt=""></a>
                 <h6 class="ml-3 text-break"><a href="#">Monday Night RAW Results (2/3)</a></h6>
@@ -938,16 +743,16 @@
                   <h5>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
                   <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
                   <a class="sign-up-btn text-white text-decoration-none" href="#">SUBSCRIBE
-                    <svg class="arrow-icon ml-2 mb-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
+                    <svg class="arrow-icon ml-2 mb-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g>
                       <defs>
-                      <rect id="SVGID_1_" width="8" height="14"></rect>
+                      <rect width="8" height="14"></rect>
                       </defs>
-                      <clipPath id="SVGID_2_">
+                      <clipPath>
                       <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
                       </clipPath>
-                      <g id="Shape_1" class="st0">
                       <g>
-                      <polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+                      <g>
+                      <polygon points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
                       </g>
                       </g>
                       </g></svg>
@@ -965,16 +770,16 @@
                 <p>Take back your inbox.
                   Sign up for our newsletter and start making sense of the world around you.</p>
                   <a class="sign-up-btn text-white text-decoration-none" href="#">SIGN UP
-                    <svg class="arrow-icon ml-2 mb-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right">
+                    <svg class="arrow-icon ml-2 mb-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g>
                       <defs>
-                      <rect id="SVGID_1_" width="8" height="14"></rect>
+                      <rect width="8" height="14"></rect>
                       </defs>
-                      <clipPath id="SVGID_2_">
+                      <clipPath>
                       <use xlink:href="#SVGID_1_" style="overflow:visible;"></use>
                       </clipPath>
-                      <g id="Shape_1" class="st0">
                       <g>
-                      <polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
+                      <g>
+                      <polygon points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon>
                       </g>
                       </g>
                       </g></svg>
@@ -990,7 +795,6 @@
             <svg
               class="logo-img"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px"
@@ -1001,7 +805,6 @@
             >
               <g>
                 <path
-                  class="st0"
                   d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
                 ></path>
               </g>
