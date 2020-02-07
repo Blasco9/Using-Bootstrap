@@ -6,7 +6,7 @@ This is the 7th project of the Microverse HTML and CSS Curriculum. For this proj
 ![screenshot 2](./Screenshot2.bmp)
 
 ## Live Demo
-[View the website here](https://rawcdn.githack.com/Blasco9/Using-Bootstrap/7eac070e464d92e8b8eadb4589e8c8df0b54015b/index.html)
+[View the website here](https://rawcdn.githack.com/Blasco9/Using-Bootstrap/8dfbffbefb83d7a2826da792614ba8400699cdf8/index.html)
 
 ## Built with
 - Bootstrap 4
