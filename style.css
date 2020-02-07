@@ -36,6 +36,11 @@ a {
   height: 14px;
 }
 
+.menu-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
 .nav-ul {
   font-size: 20px;
   width: 85%;
@@ -215,5 +220,15 @@ footer .logo-img {
   .aside-img {
     width: 258px;
     height: 172px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .subscribe-container {
+    font-size: 12px;
+  }
+
+  .menu-icon {
+    font-size: 14px;
   }
 }
